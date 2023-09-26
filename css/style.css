@@ -181,10 +181,6 @@ a {
     width: 70px;
 }
 
-.box-footer-produtos-img:hover {
-    width: 80px;
-}
-
 .fa:hover {
     color: blue;
 }
@@ -204,16 +200,14 @@ a {
     height: auto;
     padding: 1%;
     text-align: center;
+}
 
+.box-localizacao span {
+    color: blue;
 }
 
 .titulo-azul {
     color: white;
-}
-
-
-.galeria-localizacao-img:hover {
-    width: 140px;
 }
 
 .mapa {
@@ -227,13 +221,13 @@ a {
 
 }
 
-/*
-@media (min-width: 00px) and (max-width:1005px) {
-    .localizacao {
-        display: none;
+
+@media (min-width: 00px) and (max-width:750px) {
+    .box-optar i {
+        font-size: 8vw;
     }
 }
-*/
+
 
 .galeria-header-corpo {
     text-align: center;
