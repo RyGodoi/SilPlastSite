@@ -15,6 +15,12 @@ p {
   line-height: 2rem;
 }
 
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+  background-color: #2697d9;
+}
+
 .sidenav-trigger {
   color: #26a69a;
 }
