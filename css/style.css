@@ -1,234 +1,193 @@
-@import url('/css/bootstrap.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+nav ul a,
+nav .brand-logo {
+  color: #444;
 }
 
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
-* {
-    scrollbar-width: auto;
+p {
+  line-height: 2rem;
 }
 
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 16px;
+.sidenav-trigger {
+  color: #26a69a;
 }
 
-*::-webkit-scrollbar-track {
-    background: none;
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, .9);
 }
 
-*::-webkit-scrollbar-thumb {
-    background-color: #3498db;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
+.parallax-container .section {
+  width: 100%;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  #index-banner .section {
+    top: 10%;
+  }
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
 }
 
-.logo {
-    width: 5%;
+.icon-block {
+  padding: 0 15px;
 }
 
-#orcamento {
-    color: blue;
+.icon-block .material-icons {
+  font-size: inherit;
 }
 
-.apresentacao-container {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-
+footer.page-footer {
+  margin: 0;
 }
 
-.apresentacao {
-    margin-top: 20px;
-    height: 50%;
-    width: 90%;
-    background: url('/img/wallpaper01.jpg') no-repeat center center/cover;
-    /* Overlay */
-    background-color: rgba(0, 0, 0, 0.2);
-    background-blend-mode: color;
+
+.brand-logo>img {
+  width: 11rem;
 }
 
-.Quem-Somos {
-    padding: 5%;
-    width: 100%;
-    background-color: #3498db;
-    text-align: center;
-    color: white;
+.logo-silplast {
+  width: 13rem;
 }
 
-.Principais-produtos {
-    width: 100%;
-    text-align: center;
+
+.fundo-azul {
+  width: 100%;
+  background-color: #2697d9;
+  color: white;
 }
 
-.Principais-produtos h2 {
-    color: black;
-
+.botao {
+  background-color: rgb(255, 66, 66);
+  padding: 9px 30px;
+  color: #ffffff;
+  border-radius: 52px;
+  text-decoration: none;
 }
 
-.card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.fundo-azul .card p {
+  color: black;
 }
 
-.card-produtos {
-    width: 140px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 10px;
-    /* 5px rounded corners */
-    margin: 8px;
+.multiple-items {
+  padding: 20px;
+  color: white;
 }
 
-.card-produtos:hover {
-    box-shadow: 0 16px 32 px 0 rgba(0, 0, 0, 0.2);
-    background-color: rgb(215, 227, 255);
+.slide-informacoes {
+  width: 100%;
+  height: auto;
+  display: flex;
 }
 
-.card-produtos img {
-    border-radius: 5px 5px 0 0;
+.slide-informacoes>.slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.galaredia-de-produtos {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
+.slide-esquerda {
+  width: 50%;
 }
 
-.optar-silplast {
-    padding: 2%;
-    width: 100%;
-    background-color: #3498db;
-    text-align: center;
-    color: white;
+.section>.multiple-items a {
+  background-color: rgb(255, 66, 66);
+  padding: 9px 30px;
+  color: #ffffff;
+  border-radius: 52px;
+  text-decoration: none;
 }
 
-.box-optar i {
-    font-size: 3vw;
-    margin-bottom: 20px;
-    color: rgba(255, 65, 65, 0.934);
+.section>.row>.col>h4,
+h5 {
+  text-align: center;
 }
 
-.galeria-optar {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.redes-sociais li {
+  margin-bottom: 10px;
 }
 
-.box-optar {
-    text-align: center;
-    width: 250px;
+.redes-sociais a {
+  background-color: #2697d9;
 }
 
-.footer {
-    color: white;
-    padding: 2%;
-    width: 100%;
-    background-color: #2c9bd2;
+.slide>.saiba-mais {
+  display: none;
 }
 
-.galeria-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.slide-direita {
+  width: 60%;
+  display: flex;
+  justify-content: center;
 }
 
-.box-footer {
-    padding: 2%;
-    width: 300px;
+.slide-direita .img {
+  width: 100%;
+  margin: auto;
 }
 
-.box-footer h4 {
-    text-align: center;
+.slide-direita .img img {
+  width: 100%;
 }
 
-.box-footer-list:hover {
-    color: blue;
+
+.card>.card-image>img {
+  width: 100%;
 }
 
-.box-footer-produtos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.espacamento {
+  padding: 0 5px;
 }
 
-.box-footer-produtos img {
-    padding: 1%;
-    width: 70px;
-}
 
-.fa:hover {
-    color: blue;
-}
 
-.localizacao {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+@media (min-width: 0px) and (max-width: 764px) {
+
+  .slide-informacoes>.slide {
     flex-direction: column;
-}
+  }
 
-.box-localizacao {
-    color: black;
+  .slide-esquerda {
     width: 100%;
-    height: auto;
-    padding: 1%;
     text-align: center;
-}
+    padding-left: 0;
+    padding: 0;
+  }
 
-.box-localizacao span {
-    color: blue;
-}
+  .slide-esquerda a {
+    display: none;
+  }
 
-.titulo-azul {
-    color: white;
-}
+  .slide>.saiba-mais {
+    display: block;
+  }
 
-.mapa {
-    margin: 0 auto;
-    height: 400px;
-    width: 80%;
-}
+  .slide-direita {
+    width: 100%;
+  }
 
-.mapa iframe {
-    border-radius: 30px;
-
-}
-
-
-@media (min-width: 00px) and (max-width:750px) {
-    .box-optar i {
-        font-size: 8vw;
-    }
-}
-
-
-.galeria-header-corpo {
-    text-align: center;
+  .slide-direita .img {
+    width: 90%;
+    margin: auto;
+  }
 }
