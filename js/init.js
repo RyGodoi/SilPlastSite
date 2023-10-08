@@ -64,7 +64,7 @@
   //navbar
   // Smooth Scrolling
   $("nav a, .btn").on("click", function (event) {
-    if (this.hash !== "") {
+    if (this.hash !== "" || this.hash > "") {
       event.preventDefault();
 
       const hash = this.hash;
