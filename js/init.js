@@ -92,7 +92,7 @@
 
     if (larg != "" && alt != "" && espess != "" && quant != "") {
       $("#div-lista").append("<li><p>Pedido " + arraymedidas.length + ": " + larg + "(cm) <b>X</b> " + alt + "(cm) <b>X</b> " + espess + "(mm) <b>=</b> " + quant + "(kg)</p></li>");
-      var medidasString = "Pedido " + arraymedidas.length + ": " + larg.toString() + "(cm) X " + alt.toString() + "(cm) X " + espess.toString() + "(mm) = " + quant + "(kg)%0A%0A";
+      var medidasString = "Pedido " + arraymedidas.length + ": " + larg.toString() + "(cm) X " + alt.toString() + "(cm) X " + espess.toString() + "(mm) = " + quant + "(kg)%0A";
       arraymedidas.push(medidasString);
       $('input[type="number"]').val('');
 
@@ -123,13 +123,13 @@
       for (let index = 0; index < arraymedidas.length; index++) {
         arraywhatsapp.push(arraymedidas[index].replace(/ /g, "%20"));
       }
-
+      arraywhatsapp.replaceAll(',', '')
       console.log(arraywhatsapp);
 
 
       $(".links-gerados a").remove();
       $(".links-gerados").append(
-        "<a href='https://api.whatsapp.com/send?phone=5511953760769&text=Ol%C3%A1%20Silplast,%20esses%20s%C3%A3o%20meus%20pedidos:%0A%0A" + arraymedidas + "muito%20obrigado%20pela%20aten%C3%A7%C3%A3o,%20aguardo%20retorno.' target='_blank'>Click aqui para encaminhar o pedido</a>");
+        "<a href='https://api.whatsapp.com/send?phone=5511953760769&text=Ol%C3%A1%20Silplast%20esses%20s%C3%A3o%20os%20meus%20pedidos:%0A%0A" + arraymedidas + "%0A%0Amuito%20obrigado%20pela%20aten%C3%A7%C3%A3o%20estarei%20aguardando%20retorno.' target='_blank'>Click aqui para encaminhar o pedido</a>");
 
 
     }
