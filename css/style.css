@@ -164,7 +164,37 @@ h5 {
   padding: 0 5px;
 }
 
+.galeria {
+  padding: 10px;
+  background-color: #2697d9c9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
+.galeria img {
+  width: 280px;
+  margin-right: 10px;
+  border: 2px solid white;
+}
+
+.capa {
+  height: auto;
+  width: 100%;
+}
+
+.capa img {
+  width: 100%;
+}
+
+.lista-medidas a {
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 7px;
+  border-radius: 6px;
+}
 
 
 @media (min-width: 0px) and (max-width: 764px) {
