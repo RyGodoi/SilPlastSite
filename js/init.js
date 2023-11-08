@@ -123,7 +123,6 @@
       for (let index = 0; index < arraymedidas.length; index++) {
         arraywhatsapp.push(arraymedidas[index].replace(/ /g, "%20"));
       }
-      arraywhatsapp.replace(/,/g, "");
       console.log(arraywhatsapp);
 
 
