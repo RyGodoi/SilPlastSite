@@ -90,7 +90,7 @@
     var espess = $("#espessura").val();
     var quant = $("#quantidade").val();
 
-    if (larg != "" && alt != "" && espess != "" && quant != "" && nome != "") {
+    if (larg != "" && alt != "" && espess != "" && quant != "") {
       $("#div-lista").append("<li><p>Pedido " + arraymedidas.length + ": " + larg + "(cm) <b>X</b> " + alt + "(cm) <b>X</b> " + espess + "(mm) <b>=</b> " + quant + "(kg)</p></li>");
       var medidasString = "Pedido " + arraymedidas.length + ": " + larg.toString() + "(cm) X " + alt.toString() + "(cm) X " + espess.toString() + "(mm) = " + quant + "(kg)";
       arraymedidas.push(medidasString);
