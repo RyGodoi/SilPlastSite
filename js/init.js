@@ -170,7 +170,7 @@
         bObs = 'Nenhuma informação adicional'
       }
       $("#div-lista").append(" <li><p>Pedido " + arraymedidas.length + ": <b>BOBINA</b> " + bLarg + "(cm) <b>X</b> " + bEspess + "(cm) <b>=</b> " + bQuant + " <b>" + bChecked + "</b> obs: <b>" + bObs + "</b></p></li>");
-      var medidasString = "%0APedido " + arraymedidas.length + ": *BOBINA* " + bLarg.toString() + "(cm) *X* " + bEspess.toString() + "(mm) *=* " + bQuant + "*(kg)* *" + bChecked + "* obs: *" + bObs + "*";
+      var medidasString = "%0APedido " + arraymedidas.length + ": *BOBINA* " + bLarg.toString() + "(cm) *X* " + bEspess.toString() + "(mm) *=* " + bQuant + " *(kg)* *" + bChecked + "* obs: *" + bObs + "*";
       arraymedidas.push(medidasString);
 
 
