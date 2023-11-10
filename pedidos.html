@@ -54,34 +54,149 @@
 
 
     <div class="container">
-        <h4>Nos informe as Medidas desejadas.</h4>
+
+        <h4>Informações sobre o pedido.</h4>
+
+
         <div class="row">
             <form class="col s12">
                 <div class="row">
-                    <div class="input-field col s6">
-                        <input id="largura" type="number" class="validate" required>
-                        <label for="largura">Largura(cm)</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="altura" type="number" class="validate" required>
-                        <label for="altura">Altura(cm)</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="espessura" type="number" class="validate" required>
-                        <label for="espessura">Espessura (mm)</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="quantidade" type="number" class="validate" required>
-                        <label for="quantidade">Quantidade (kg)</label>
+                    <div class="input-field col s12">
+                        <input id="nome" type="text" class="validate" maxlength="80">
+                        <label for="nome">Nome/Empresa</label>
                     </div>
                 </div>
-                <input id="adicionar" type="submit" value="Adicionar"
-                    style="border: none;background-color: green;color: white;padding: 7px; border-radius: 6px;">
             </form>
         </div>
+
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">content_copy</i>Sacos plásticos</div>
+                <div class="collapsible-body">
+
+                    <h5>Nos informe as Medidas desejadas.</h5>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="sacosLargura" type="number" class="validate" required maxlength="3">
+                                    <label for="sacosLargura">Largura(cm)</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="sacosAltura" type="number" class="validate" required maxlength="3">
+                                    <label for="sacosAltura">Altura(cm)</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="sacosEspessura" type="number" class="validate" required maxlength="3">
+                                    <label for="sacosEspessura">Espessura (mm)</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="sacosQuantidade" type="number" class="validate" required maxlength="6">
+                                    <label for="sacosQuantidade">Quilo/Milheiro</label>
+                                </div>
+                                <p>
+                                    <label>
+                                        <input id="quiloSelect" name="group1" type="radio" checked />
+                                        <span>Quilo (Kg)</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input id="milheiroSelect" name="group1" type="radio" />
+                                        <span>Milheiro (un)</span>
+                                    </label>
+                                </p>
+                                <ul class="collapsible">
+                                    <li>
+                                        <div class="collapsible-header"><i
+                                                class="material-icons">chat_bubble_outline</i>Obs (
+                                            para
+                                            informar sanfonados, pigmento de cores etc... )</div>
+                                        <div class="collapsible-body">
+                                            <div class="row">
+                                                <div class="input-field col s6">
+                                                    <input id="obsSacos" type="text" class="validate sacosBobinasInput"
+                                                        maxlength="100">
+                                                    <label for="obsSacos">Observações</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input id="sacosAdicionar" type="submit" value="Adicionar"
+                                style="border: none;background-color: green;color: white;padding: 7px; border-radius: 6px;">
+                        </form>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">crop_portrait</i>Bobinas plásticas</div>
+                <div class="collapsible-body">
+
+                    <h5>Nos informe as Medidas desejadas.</h5>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s4">
+                                    <input id="bobinasLargura" type="number" class="validate" required maxlength="3">
+                                    <label for="bobinasLargura">Largura(cm)</label>
+                                </div>
+                                <div class="input-field col s4">
+                                    <input id="bobinasEspessura" type="number" class="validate" required maxlength="3">
+                                    <label for="bobinasEspessura">Espessura (mm)</label>
+                                </div>
+                                <div class="input-field col s4">
+                                    <input id="bobinasQuantidade" type="number" class="validate" required maxlength="5">
+                                    <label for="bobinasQuantidade">Quantidade (kg)</label>
+                                </div>
+                                <p>
+                                    <label>
+                                        <input id="bobinasTubular" name="group1" type="radio" checked />
+                                        <span>Bobina tubular</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input id="bobinasMonofolha" name="group1" type="radio" />
+                                        <span>Bobina monofolha</span>
+                                    </label>
+                                </p>
+
+                                <ul class="collapsible">
+                                    <li>
+                                        <div class="collapsible-header"><i
+                                                class="material-icons">chat_bubble_outline</i>Obs (
+                                            para
+                                            infoirmar sanfonados, pigmento de cores etc... )</div>
+                                        <div class="collapsible-body">
+                                            <div class="row">
+                                                <div class="input-field col s6">
+                                                    <input id="obsBobinas" type="text"
+                                                        class="validate sacosBobinasInput" required maxlength="100">
+                                                    <label for="obsBobinas">Observações</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <input id="bobinasAdicionar" type="submit" value="Adicionar"
+                                style="border: none;background-color: green;color: white;padding: 7px; border-radius: 6px;">
+                        </form>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+
+
         <h4>Lista de medidas desejadas.</h4>
         <div class="lista-medidas">
             <ul id="div-lista">
+
             </ul>
             <input id="apagar" type="button" value="Apagar"
                 style="border: none;background-color: red;color: white;padding: 7px; border-radius: 6px;">
