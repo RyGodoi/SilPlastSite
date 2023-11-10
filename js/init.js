@@ -129,7 +129,7 @@
         sObs = 'Nenhuma informação adicional'
       }
       $("#div-lista").append(" <li><p>Pedido " + arraymedidas.length + ": <b>SACOS</b> " + sLarg + "(cm) <b>X</b> " + sAlt + "(cm) <b>X</b> " + sEspess + "(mm) <b>=</b> " + sQuant + " <b>" + sChecked + "</b> obs: <b>" + sObs + "</b></p></li>");
-      var medidasString = "%0APedido " + arraymedidas.length + ": *SACOS*" + sLarg.toString() + "(cm) *X* " + sAlt.toString() + "(cm) *X* " + sEspess.toString() + "(mm) *=* " + sQuant + " *" + sChecked + "* obs: *" + sObs + "*";
+      var medidasString = "%0APedido " + arraymedidas.length + ": *SACOS* " + sLarg.toString() + "(cm) *X* " + sAlt.toString() + "(cm) *X* " + sEspess.toString() + "(mm) *=* " + sQuant + " *" + sChecked + "* obs: *" + sObs + "*";
       arraymedidas.push(medidasString);
 
 
